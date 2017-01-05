@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Jivin' Jazz &ndash; About Us</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One|Roboto:300,500">
+    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <h1><a href="index.html">Jivin' Jazz</a></h1>
+            <div id="mobile-menu">
+                <img class="menu-btn" src="images/icon-black/list-menu.svg" alt="Menu Open">
+                <img class="menu-btn" src="images/icon-black/close.svg" alt="Menu Close" style="display:none;">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="recordings/pat-metheny/recording-index.html">Recordings</a></li>
+                    <li><a href="miles-coltrane-jazz-blog.html">Blog</a></li>
+                    <li><a href="about-us.html" class="selected">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="search-wrap">
+                        <form action="#">
+                            <input id="search" name="search" type="text">
+                            <input id="search-submit" src="images/icon-black/search.svg" alt="Search" type="image">
+                            <span id="search-icon"></span>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="about-us">
+        <div class="inner">
+            <div class="about-us-text">
+                <h3>About Jivin' Jazz</h3>
+                <p>Miles Coltrane started collecting recordings of live jazz performances when he was a schoolboy. He had a music teacher at school who would regularly played jazz records to introduce the pupils to a broader range of music. The teacher would talk passionately about the different pieces of music. She showed the pupils how jazz musicians interacted with each other to create spontaneous live performances. Miles was hooked. He started to look around for recordings to collect for himself. He also bought a professional-quality Sony tape recorder with money he earnt delivering supermarket pamphlets and used it record some jazz gigs himself. Slowly, but steadily, his collection grew.</p>
+                <p>In 1999 Miles decided to make collecting jazz recordings his main focus. He established his company, Jivin' Jazz, and has been devoting more time to collecting recordings ever since. He still goes out and records live performances himself, when the musicians give him permission. Currently, he has thousands of recordings, including many that are considered to be significant. The idea came to him that it would be wonderful to be able to share his recordings with people from around the world, so he has started this website, which showcases the music he has collected.</p>
+                <div class="newsletter">
+                    <h5>Newsletter</h5>
+                    <p>Get the latest information about our recordings.</p>
+                    <form method="POST" action="mailto:miles@jivin-jazz.co.nz" target="_blank">
+                        <div class="controls">
+                            <input type="email" name="email" id="email" class="float-label" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <input type="submit" value="Subscribe">
+                    </form>
+                    <span id="privacy-open">Privacy Policy</span>
+                    <span>Unsubscribe</span>
+                </div>
+            </div>
+            <div class="about-us-image">
+                <img src="images/miles-coltrane.jpg" alt="Miles Coltrane">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal -->
+    <div id="privacy-modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="close">×</div>
+            <h4>Privacy Policy</h4>
+            <p>This policy explains how we (Jivin’ Jazz) use any personal information we collect about you when you register to receive email newsletters. By registering for this service, you consent to the collection, retention and use of your personal information in accordance with the terms of this policy.</p>
+
+            <h5>Collection of information</h5>
+            <p>We collect information about you when you register for the newsletter.</p>
+
+            <h5>How we will use your information</h5>
+            <p>The information you provide will be used to send you email newsletters. Recipient lists, including email addresses, are stored on a secure server for the purposes of email newsletter distribution. This privacy policy only refers to the way Jivin’ Jazz will use your information.</p>
+
+            <h5>Unsubscribing</h5>
+            <p>You can opt out from further communications at any point by selecting the unsubscribe link at the bottom of the newsletter. You can also contact us directly to request that you are removed from our mailing list.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="inner">
+            <p>&copy; Jivin' Jazz, 2016</p>
+            <ul class="sns">
+                <li><a href="https://www.facebook.com/hashtag/jazz?fref=ts" target="_blank"><img src="images/icon-white/facebook-app-logo.svg" alt="Facebook Logo"></a></li>
+                <li><a href="https://www.instagram.com/explore/tags/jazz/?hl=en" target="_blank"><img src="images/icon-white/instagram-logo.svg" alt="Instagram Logo"></a></li>
+                <li><a href="https://twitter.com/hashtag/Jazz?src=hash&lang=en" target="_blank"><img src="images/icon-white/twitter-logo-silhouette.svg" alt="Twitter Logo"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

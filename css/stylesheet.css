@@ -1,0 +1,1112 @@
+/* RESET */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    /* Cancel out some differences between browser defaults */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+ 
+* {
+    /* The width of an element will be the size of its border box, not its content box (which is the normal default). */
+    box-sizing: border-box;
+}
+
+main { 
+    /* Make sure the browser knows how to display the HTML5 main element. */
+    display: block;
+}
+
+
+/* LAYOUT */
+
+html, body {
+    height: 100%;
+}
+
+.inner {
+    width: 80em;
+    margin: 0 auto;
+}
+
+header .inner, 
+nav ul, 
+footer .inner, 
+.sns, .albums,
+.recording-title .inner,
+.recording-info .inner {
+    display: flex;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+header .inner, footer .inner {
+    justify-content: space-between;
+}
+
+header .inner h1 {
+    flex-grow: 2;
+}
+
+header .inner nav {
+    flex-grow: 1;
+}
+
+.lead-image, 
+.recording-index,
+.about-us,
+.blog {
+    padding-top: 3.5em;
+}
+
+.recording-media,
+.contact {
+    padding-top: 3.6em;
+}
+
+.lead-image .inner {
+    position: relative;
+}
+
+.lead-image h2 {
+    position: absolute;
+    top: 2.5em;
+    right: 0;
+}
+
+.biography, 
+.recording-info {
+    padding-bottom: 4em;
+}
+
+.recording-title {
+    padding-bottom: 2em;
+}
+
+.biography-text {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 2em;
+       -moz-column-gap: 2em;
+            column-gap: 2em;
+}
+
+.albums {
+    flex-wrap: wrap;
+    max-height: 52em;
+    overflow: hidden;
+    -webkit-transition: max-height 1.5s ease-out;
+       -moz-transition: max-height 1.5s ease-out;
+            transition: max-height 1.5s ease-out;
+}
+
+.album {
+    flex-basis: 24%;
+    margin: 0 1% 2em 0;
+}
+
+.expand-section {
+    margin-top: 2em;
+}
+
+.awards-content {
+    max-height: 50em;
+    overflow: hidden;
+    -webkit-transition: max-height 1.5s ease-out;
+       -moz-transition: max-height 1.5s ease-out;
+            transition: max-height 1.5s ease-out;
+}
+
+footer {
+    padding: 2em 0;
+}
+
+.show-all {
+    max-height: 1000em;
+    -webkit-transition: max-height 1.5s ease-in;
+       -moz-transition: max-height 1.5s ease-in;
+            transition: max-height 1.5s ease-in;
+}
+
+.recording-title .inner,
+.musician-name,
+.a-recording {
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.players {
+    display: block;
+    flex-basis: 20em;
+    padding-right: 2em;
+    margin-bottom: 2em;
+}
+
+.about-recording {
+    flex-basis: 60em;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.players td {
+    line-height: 1.5;
+    width: 9em;
+    padding-right: 1em;
+}
+
+.about-recording {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 2em;
+       -moz-column-gap: 2em;
+            column-gap: 2em;
+}
+
+.musician-name a {
+    margin-bottom: 2em;
+}
+
+.musician-name,
+.recordings,
+.a-recording {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.a-recording {
+    flex-basis: 50%;
+    padding: 0 1px;
+    margin-bottom: 4em;
+}
+
+.a-recording a {
+    flex-basis: 100%;
+}
+
+.a-recording h4,
+.a-recording p {
+    margin: 1em;
+}
+
+.a-recording p {
+    margin-right: 3em;
+}
+
+.home-header h1 {
+    visibility: hidden;
+}
+
+#home-wrapper {
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 100%;
+    right: 0;
+    background-color: #000;
+    background-size: cover;
+}
+
+.home-header {
+    background-color: transparent;
+}
+
+#home-wrapper .hero {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home-wrapper footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: transparent;
+}
+
+.contact {
+    padding-bottom: 4em;
+}
+
+.contact .inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#map {
+    width: 100%;
+    height: 24em;
+    border: 0;
+    margin-bottom: 4em;
+}
+
+.contact .contact-copy {
+    flex-basis: 50%;
+}
+
+.contact .physical-address {
+    flex-basis: 30%;
+}
+
+.contact .phone-n-email {
+    flex-basis: 20%;
+}
+
+.send-message {
+    padding: 4em 0;
+}
+
+.send-message form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex-basis: 49.5%;
+}
+
+.controls {
+    width: 100%;
+    position: relative;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+}
+
+textarea {
+    resize: none;
+    height: 10em;
+}
+
+label {
+    position: absolute;
+    left: .8em;
+    top: .8em;
+    padding: .2em;
+    transition: top .3s;
+}
+
+label.active {
+    top: -0.8em;
+}
+
+input[type=submit] {
+    width: 100%;
+}
+
+.about-us .inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-us-text {
+    flex-basis: 50%;
+    padding-right: 2em;
+}
+
+.about-us-image {
+    flex-basis: 50%;
+}
+
+.newsletter {
+    margin: 2em;
+    padding: 1em;
+    border: 1px solid #ddd;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 6em; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 2em;
+    width: 40em;
+    position: relative;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    text-align: right;
+    font-weight: bold;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.blog .inner {
+    display: flex;
+}
+
+.blog-posts {
+    flex-basis: 40em;
+    margin-bottom: 3em;
+}
+
+.blog-aside {
+    flex-basis: 40em;
+    padding: 3em 10em;
+}
+
+.article-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+    margin: 1em 0;
+    padding-top: .5em;
+}
+
+.blog-aside ul {
+    margin-bottom: 2em;
+}
+
+.blog-aside ul li {
+    line-height: 1;
+    margin: 0 0 0.6em 1.2em;
+}
+
+.blog-comment {
+    display: none;
+}
+
+
+/* TYPOGRAPHY */
+
+body {
+    font-family: 'Roboto', 'Yu Gothic', sans-serif;
+    font-weight: 300;
+}
+
+h1 a {
+    font-family: 'Patua One', 'Yu Gothic', sans-serif;
+    font-size: 2.5em;
+    text-decoration: none;
+    color: #000;
+}
+
+h2 {
+    font-family: 'Roboto', 'Yu Gothic', sans-serif;
+    font-size: 8em;
+    text-align: right;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.hero h2 {
+    font-family: 'Patua One', 'Yu Gothic', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+h3 {
+    font-family: 'Roboto', 'Yu Gothic', sans-serif;
+    font-size: 3em;
+    text-transform: uppercase;
+    padding-top: 1em;
+    margin-bottom: .5em;
+}
+
+.recording-title h3,
+.blog h3 {
+    text-transform: none;
+}
+
+.blog h3 {
+    font-size: 2em;
+    margin-bottom: 0;
+    padding-top: 1.5em;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.modal-content h4 {
+    text-transform: uppercase;
+    margin-bottom: .5em;
+}
+
+.blog-aside h4 {
+    margin-bottom: .5em;
+}
+
+h5 {
+    text-transform: uppercase;
+}
+
+.contact-copy h5 {
+    font-size: 2em;
+}
+
+.send-message h5,
+.newsletter h5 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.modal-content h5 {
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+p, ul {
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.album-title, 
+.recording figcaption {
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 3em;
+    line-height: 1.35;
+    margin: 0 1em;
+}
+
+.album-subtitle {
+    text-transform: none;
+}
+
+.album .year-released {
+    width: 5em;
+    margin: 0 1em;
+    border-top: 1px solid #ddd;
+}
+
+.awards ul {
+    list-style-position: inside;
+}
+
+.place-n-year {
+    font-size: 1.5em;
+    color: #999;
+    margin-bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.musician-name a {
+    font-size: 1.5em;
+}
+
+.musician-name a {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.musician-name a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.musician-name a:hover:after {
+    width: 100%;
+    background: #666;
+    }
+
+.a-recording h4 {
+    font-weight: 300;
+}
+
+.a-recording p,
+.post-date {
+    color: #999;
+}
+
+.physical-address p,
+.phone-n-email p {
+    margin-bottom: 0;
+}
+
+.physical-address a:hover,
+.phone-n-email a:hover,
+.players a:hover,
+.article-bottom a:hover,
+.recent-posts a:hover,
+.comment-open:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+input, textarea, input[type=submit] {
+    font-family: 'Roboto', 'Yu Gothic', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+
+/* COLOUR SCHEME & BORDERS */
+
+body {
+    color: #000;
+}
+
+header, .discography, .contact {
+    background-color: #eee;
+}
+
+nav a {
+    font-weight: 500;
+    color: #000;
+}
+
+.lead-image {
+    background-color: #000;
+    color: #eee;
+}
+
+footer {
+    background-color: #444;
+    color: #eee;
+}
+
+input:focus, input:hover,
+textarea:focus, textarea:hover {
+    outline: none;
+    border-color: #bbb;
+}
+
+label {
+    color: #999;
+}
+
+label.active {
+    background-color: #fff;
+    color: #000;
+}
+
+input[type=submit] {
+    background-color: #eee;
+    border: 1px solid #999;
+    color: #000;
+    padding: 1em;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    border-color: #666;
+}
+
+input[type=submit]:active {
+    background-color: #ddd;
+}
+
+.newsletter span {
+    text-decoration: underline;
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+
+/* NAVIGATION */
+
+nav ul, .sns {
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav li {
+    margin-left: 4.5em;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 1em 0;
+    color: #000;
+    transition: color .3s;
+}
+
+nav a:hover,
+.selected {
+    color: #666;
+}
+
+#home-wrapper nav a {
+    color: #fff;
+}
+
+#home-wrapper nav a:hover {
+    color: #ddd;
+}
+
+#mobile-menu {
+    display: none;
+    height: 3em;
+}
+
+#search-wrap {
+    position: relative;
+    top: 0;
+    padding: 0;
+    margin-left: 5em;
+}
+
+#search {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 2em;
+    width: 32em;
+    height: 3.4em;
+    z-index: 5;
+    border: none;
+    outline: none;
+    background: #fff;
+    padding: 0 1em;
+    font-size: 1em;
+    cursor: text;
+}
+
+#search-submit {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2em;
+    height: auto;
+    z-index: 10;
+    border: none;
+    outline: none;
+    padding: 1.3em 0 1.3em 1em;
+    cursor: pointer;
+}
+
+#search-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2em;
+    height: 3.4em;
+    z-index: 20;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+#search-icon:hover {
+    opacity: 0.4;
+}
+
+.sns li {
+    margin-left: 1.5em;
+}
+
+
+/* IMAGES & VIDEOS */
+
+img, video {
+    width: 100%;
+}
+
+video {
+    height: 45em;
+    background-color: #000;
+    color: #eee;
+}
+
+.menu-btn {
+    width: 3em;
+    padding: .5em;
+}
+
+#search-submit {
+}
+
+.expand-btn {
+    display: block;
+    width: 2em;
+    margin: 0 auto;
+}
+
+.sns img {
+    height: 1.5em;
+    width: auto;
+}
+
+.album {
+    padding: .2em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.a-recording img {
+    height: 21.6em;
+    opacity: 1;
+    transition: .3s ease;
+}
+
+.a-recording img:hover {
+    opacity: 0.8;
+}
+
+.about-us-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-lead-img {
+    margin-bottom: 1em;
+}
+
+.article-bottom img {
+    width: 1em;
+    margin-left: .5em;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 83.236em) {
+
+    .inner {
+        width: 40em;
+    }
+
+    header .inner h1 {
+        flex-grow: 1;
+    }
+
+    .biography-text {
+        -webkit-column-count: 1;
+           -moz-column-count: 1;
+                column-count: 1;
+    }
+
+    .album {
+        flex-basis: 48%;
+        margin: 0 2% 2em 0;
+    }
+
+    .recording-title .inner,
+    .recording-info .inner,
+    .recordings {
+        flex-wrap: wrap;
+    }
+    
+    .recording-title h3, 
+    .place-n-year,
+    .players, 
+    .about-recording,
+    .a-recording {
+        flex-basis: 100%;
+    }
+    
+    .about-recording {
+        -webkit-column-count: 1;
+           -moz-column-count: 1;
+                column-count: 1;
+    }
+
+    h2 {
+        font-size: 4em;
+    }
+    
+    .hero h2 {
+        font-size: 6em;
+    }
+    
+    nav li {
+        margin-left: 1.5em;
+    }
+    
+    #search-wrap {
+        margin-left: 2.5em;
+    }
+
+    #search {
+        width: 21em;
+        right: 1.5em;
+    }
+    
+    #search-icon {
+        width: 1.5em;
+    }
+
+    video {
+        height: auto;
+    }
+    
+    .contact .contact-copy {
+        flex-basis: 100%;
+        margin-bottom: 2em;
+    }
+
+    .contact .physical-address {
+        flex-basis: 60%;
+    }
+
+    .contact .phone-n-email {
+        flex-basis: 40%;
+    }
+
+    .form-group {
+        flex-basis: 100%;
+    }
+
+    .about-us-text {
+        flex-basis: 100%;
+        padding-bottom: 2em;
+        order: 2;
+    }
+
+    .about-us-image {
+        flex-basis: 100%;
+        order: 1;
+    }
+    
+    .blog-posts {
+        flex-basis: 75%;
+    }
+    .blog-aside {
+        flex-basis: 25%;
+        padding: 3em 2em;
+    }
+    
+}
+
+@media screen and (max-width: 43.236em) {
+
+    /* LAYOUT */
+    
+    .inner {
+        width: 100%;
+        padding: 0 1em;
+    }
+    
+    /*
+    header {
+        position: static;
+    }
+    */
+
+    .lead-image, .recording-media, .contact {
+        padding-top: 3em;
+    }
+
+    .lead-image .inner, 
+    .recording-media .inner {
+        padding: 0;
+    }
+    
+    .albums {
+        justify-content: center;
+    }
+    
+    .album {
+        flex-basis: 18em;
+    }
+    
+    .contact .physical-address,
+    .contact .phone-n-email {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .contact .physical-address {
+        margin-bottom: 1em;
+    }
+    
+    .modal-content {
+        width: 100%;
+    }
+
+    
+    /* TYPOGRAPHY */
+    
+    h1 a {
+        font-size: 2em;
+    }    
+        
+    .lead-image h2 {
+        position: static;
+        font-size: 3em;
+        padding: 0;
+    }
+    
+    .hero h2 {
+        font-size: 4em;
+    }
+    
+    #br-deco {
+        display: none;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+    
+    .blog h3 {
+        font-size: 1.5em;
+    }
+    
+    .musician-name h3,
+    .musician-name a {
+        flex-basis: 100%;
+    }
+    
+    .a-recording h4,
+    .a-recording p {
+        flex-basis: 100%;
+        margin: 0;
+    }
+    
+    .place-n-year {
+        font-size: 1.2em;
+    }
+    
+    .contact-copy h5 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+    .blog-posts {
+        flex-basis: 100%;
+    }
+    
+    .blog-aside {
+        display: none;
+    }
+    
+    footer p {
+        font-size: 0.8em;
+    }
+    
+    .sns li {
+        margin-left: 1em;
+    }
+    
+    
+    /* NAVIGATION */
+    
+    header .inner {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        flex-basis: 100%;
+        width: 100%;
+        display: none;
+        position: absolute;
+        top: 3em;
+        left: 0;
+        background-color: #eee;
+        z-index: 100;
+    }
+    
+    .home-header nav {
+        background-color: #000;
+    }
+    
+    .home-header nav li:hover {
+        background-color: #333;
+    }
+    
+    .home-header.menu-open {
+        background-color: #000;
+    }
+    
+    nav li {
+        font-size: 1.5em;
+        border-top: 1px solid #fff;
+        padding: 0 1em;
+        margin-left: 0;
+    }
+    
+    #mobile-menu, nav ul {
+        display: block;
+    }
+    
+    .menu-btn, nav li {
+        transition: 0.3s;
+    }
+    
+    .menu-btn:hover, nav li:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    
+    nav a:hover, .selected {
+        color: #000;
+    }
+
+    #search-wrap {
+        display: none;
+    }
+    
+    /* IMAGES & VIDEOS */
+    
+    .a-recording img {
+        height: auto;
+    }
+    
+    .sns img {
+        height: 1em;
+    }
+    
+}
