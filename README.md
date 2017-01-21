@@ -1,4 +1,7 @@
-# web-practice
+# jivin-jazz
+
+Features: HTML5, CSS3, JavaScript, jQuery, Google Maps JavaScript API,
+          responsive, minimalist design,
 
 I made this website for a website development course project.
 In the project I've experienced a whole cycle of website development, from
@@ -12,10 +15,5 @@ Each student was assigned to a musician, in my case it was Patt Metheny (yay).
 The website was made from scratch to deepen my understanding in HTML, CSS and
 JavaScript.
 
-Responsive
-Made it responsive by using CSS media queries. The point is not using popular
-device dimensions to determine breakpoints because the device landscape is
-always changing. Respect users' preference of font size and use "em"s to design
-everything, not pixels.
-
-Minimalist design
+* As it was made for a school project, there were copyrighted texts, which I
+replaced to Lorem Ipsum.
